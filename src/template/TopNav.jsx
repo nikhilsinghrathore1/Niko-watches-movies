@@ -47,11 +47,11 @@ const TopNav = () => {
                           
        
   return (
-    <div className='w-[100%] h-fit  pt-6'>
+    <div className='w-[100%]  z-10 left-0   h-fit pb-1  pt-4'>
 
-               <div className='w-[100%] relative justify-center text-white flex gap-3 items-center'>
+               <div className='w-[100%]  relative justify-center text-white flex gap-3 items-center'>
                               <i onClick={()=>inputref.current.focus()} class="ri-search-line text-xl font-light"></i>
-                              <input ref={inputref} onChange={(e)=>setsearch(e.target.value)} className='w-[60%]  p-2 text-zinc-400  bg-transparent outline-none text-lg border-b-2 border-zinc-50/10 rounded-xl' type="text" placeholder='search' />
+                              <input ref={inputref} onChange={(e)=>setsearch(e.target.value)} className='w-[60%]  p-2 text-zinc-400 bg-transparent   outline-none text-lg border-b-2 border-zinc-50/30 rounded' type="text" placeholder='search' />
                               {search?<>
                               
                               <i onClick={()=>{
@@ -60,7 +60,7 @@ const TopNav = () => {
                                              }} class="ri-close-line text-xl font-light absolute top-3 right-[218px]"></i>
                               
                               
-                              <div className='w-[59%] h-[40vh] bg-white/10 absolute top-12 left-[235px] rounded overflow-x-hidden'>
+                              <div className='w-[60%] h-[40vh] bg-black/80 absolute z-10 top-12 left-[210px] rounded overflow-x-hidden'>
                                         {insideSearch.map((e,i)=><Searched data={e} key={i}/>)}
                               </div></>:""}
                </div>

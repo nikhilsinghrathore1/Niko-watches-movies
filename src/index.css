@@ -10,3 +10,36 @@
 ::-webkit-slider-thumb{
                background: #6556cd;
 }
+
+
+.gradient{
+               background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, .45), rgba(0, 0, 0, 0));
+               z-index: 1;
+             
+}
+.objpos{
+               object-position: 50% 30%;
+}
+
+select {
+               /*   arrow change CSS */
+               appearance: none;
+               /*  Change the background images data source as you wnats  
+                 background-image: url('YOUR IMAGE/DATA SOURCE SVG');
+               */
+               background-image: url('data:image/svg+xml,<svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.49975 12L0.406487 0.75L18.593 0.750002L9.49975 12Z" fill="%23FAB918"/></svg>');
+             
+               background-repeat: no-repeat;
+               background-position: right 1.2rem top 50%;
+               background-size: 1.4rem auto;
+               /*   Select Dropdown  */
+               width: 40%;
+            
+               max-width: 150px;
+               height: 30px;
+               padding: 5px 10px;
+               border-radius: 3px;
+               font-size: 16px;
+               text-transform: uppercase;
+             }
+             
