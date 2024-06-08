@@ -78,11 +78,12 @@ const refreshHandler = ()=>{
                               loader="loading...">
                <div className='w-full flex justify-center  flex-wrap gap-12 pt-20 '>
 
-                              {trending.map(e=>(
+               {trending.map(e=>(
                                              
-                                             <div className='w-[18%] h-[365px] text-[21.5px] font-semibold rounded overflow-hidden'>
+                                             <div onClick={()=>navigate(`/${filter}/${e.id}`)} className='w-[18%] relative h-[365px] text-[21.5px] font-semibold rounded overflow-hidden'>
                                              <img className='w-full h-[80%] object-cover' src={`https://image.tmdb.org/t/p/original/${e.backdrop_path || e.profile_path}`} alt="not showing" />
                                              <h1 className='mt-2 opacity-60'>{e.name || e.title || e.original_name || e.original_title}</h1>
+                                             <div className='w-12 flex items-center justify-center absolute bottom-[20%] -right-[0%] h-12 rounded-full text-white bg-yellow-600'>{(e.vote_average*10).toFixed()}<sup>%</sup> </div>
                               </div>
                               ))}
                </div>
