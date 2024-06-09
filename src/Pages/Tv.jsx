@@ -57,7 +57,7 @@ const refreshHandler = ()=>{
                <div className='w-full h-[10vh] fixed px-5 bg-[#1D1C23] z-10 top-0 left-0 flex justify-between items-center'>
                               <h1 onClick={()=>navigate("/")} className='text-2xl  font-bold '>
                                              <i className="text-[#6556cd] mr-2 font- ri-arrow-left-line"></i>
-                                             Movies
+                                             tvShows
                               </h1>
 
                               <div className='w-[80%] '>
