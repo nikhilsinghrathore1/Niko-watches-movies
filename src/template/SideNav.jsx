@@ -42,7 +42,7 @@ const SideNav = () => {
                               <div className='px-1 mt-5 border-b-[2px] border-zinc-400/40 pb-2'>
                                              {data.map((e,i)=>(
 
-                                             <div onClick={()=>navigate(`/${e.text}`)} className='flex cursor-pointer opacity-70 text-[17px] p-4 hover:bg-[#6556cd] hover:opacity-100 hover:text-white duration-150 rounded-[5px] gap-[5px] items-center'>
+                                             <div onClick={()=>navigate(`/${e.text.replace(/\b\s+\b/g, '')}`)} className='flex cursor-pointer opacity-70 text-[17px] p-4 hover:bg-[#6556cd] hover:opacity-100 hover:text-white duration-150 rounded-[5px] gap-[5px] items-center'>
                                              <i className={e.icon}></i>
                                              <p className='capitalize  '>{e.text}</p>
                                              </div>
